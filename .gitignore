@@ -1,0 +1,17 @@
+# Ignore Gradle build files
+.gradle/
+**/build/
+
+# Ignore IntelliJ/Android Studio project files
+.idea/
+*.iml
+
+# Ignore OS files
+.DS_Store
+
+# Ignore node and web build artifacts (if applicable)
+node_modules/
+dist/
+
+# Ignore environment files
+.env

