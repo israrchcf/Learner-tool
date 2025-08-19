@@ -1,30 +1,30 @@
 {
-  "project_info": {
-    "project_number": "953487025826",
-    "firebase_url": "https://learner-tool-default-rtdb.firebaseio.com",
-    "project_id": "learner-tool",
-    "storage_bucket": "learner-tool.firebasestorage.app"
-  },
-  "client": [
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:953487025826:android:78e8b0ae0d5389b4b4d9fb",
-        "android_client_info": {
-          "package_name": "com.wains.app"
-        }
-      },
-      "oauth_client": [],
-      "api_key": [
-        {
-          "current_key": "AIzaSyCbG5YW3iyDVeHJ4PKUMXstPJrgNbtDxgw"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": []
-        }
-      }
-    }
-  ],
-  "configuration_version": "1"
+    "project_info": {
+        "project_number": "953487025826",
+            "firebase_url": "https://learner-tool-default-rtdb.firebaseio.com",
+                "project_id": "learner-tool",
+                    "storage_bucket": "learner-tool.firebasestorage.app"
+                      },
+                        "client": [
+                            {
+                                  "client_info": {
+                                          "mobilesdk_app_id": "1:953487025826:android:78e8b0ae0d5389b4b4d9fb",
+                                                  "android_client_info": {
+                                                            "package_name": "com.wains.app"
+                                                                    }
+                                                                          },
+                                                                                "oauth_client": [],
+                                                                                      "api_key": [
+                                                                                              {
+                                                                                                        "current_key": "AIzaSyCbG5YW3iyDVeHJ4PKUMXstPJrgNbtDxgw"
+                                                                                                                }
+                                                                                                                      ],
+                                                                                                                            "services": {
+                                                                                                                                    "appinvite_service": {
+                                                                                                                                              "other_platform_oauth_client": []
+                                                                                                                                                      }
+                                                                                                                                                            }
+                                                                                                                                                                }
+                                                                                                                                                                  ],
+                                                                                                                                                                    "configuration_version": "1"
 }
